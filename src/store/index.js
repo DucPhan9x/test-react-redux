@@ -1,6 +1,13 @@
-import { createStore } from "redux";
-import reducers from "../reducers/index";
+import thunk from "redux-thunk";
+import { createStore, applyMiddleware } from "redux";
+import { createLogger } from "redux-logger";
 
-const store = createStore(reducers);
+import reducers from "../reducers";
+import { composeWithDevTools } from "redux-devtools-extension";
+
+const store = createStore(
+  reducers,
+  composeWithDevTools(applyMiddleware(thunk, createLogger()))
+);
 
 export default store;

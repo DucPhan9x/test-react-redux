@@ -13,7 +13,31 @@ const Contact = ({ showContact, contact, handleCloseContact }) => {
       <Modal.Header>
         <Modal.Title>Contact Detail</Modal.Title>
       </Modal.Header>
-      <Modal.Body>Contact detailllll</Modal.Body>
+      <Modal.Body>
+        <div>
+          <p>
+            <strong>Id:</strong> {contact.id}
+          </p>
+          <p>
+            <strong>First name:</strong> {contact.first_name}
+          </p>
+
+          <p>
+            <strong>Last name:</strong> {contact.last_name}
+          </p>
+
+          <p>
+            <strong>Email:</strong> {contact.email}
+          </p>
+
+          <p>
+            <strong>Phone number:</strong> {contact.phone_number}
+          </p>
+          <p>
+            <strong>Country Id:</strong> {contact.country_Id}
+          </p>
+        </div>
+      </Modal.Body>
       <Modal.Footer className="d-flex justity-content-between">
         <Button
           variant="secondary"

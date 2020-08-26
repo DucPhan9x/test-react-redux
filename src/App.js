@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Modal, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import classes from "./styles/App.module.css";
 import { Link, BrowserRouter, Switch, Route } from "react-router-dom";
 import Contacts from "./components/Contacts";
@@ -42,7 +42,7 @@ const App = () => {
           <Route exact path="/all-contacts">
             <Contacts
               title="All Contacts"
-              coutryId={ALL_COUNTRY}
+              countryId={ALL_COUNTRY}
               showContacts={showContacts}
               selectedContactActive={handleSelectedContact}
             ></Contacts>
@@ -50,7 +50,7 @@ const App = () => {
           <Route exact path="/us-contacts">
             <Contacts
               title="US Contacts"
-              coutryId={US_COUNTRY}
+              countryId={US_COUNTRY}
               showContacts={showContacts}
               selectedContactActive={handleSelectedContact}
             ></Contacts>
