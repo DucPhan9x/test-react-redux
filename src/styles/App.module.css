@@ -1,0 +1,23 @@
+.textCenter {
+  margin-top: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonA {
+  background-color: rgb(132, 177, 255) !important;
+  color: #46139f !important;
+  margin: 0 20px 0 20px;
+}
+.buttonB {
+  color: #ff7f50 !important;
+  background-color: rgb(132, 177, 255) !important;
+  margin: 0 20px 0 20px;
+}
+.buttonC {
+  color: #46139f !important;
+  border-color: #46139f !important;
+  background-color: white !important;
+  margin: 0 20px 0 20px;
+}
